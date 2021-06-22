@@ -1,6 +1,6 @@
 FROM rocker/rstudio:3.6.3
 
-RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+RUN apt-get update -qq && apt-get -y install \
   libxml2-dev \
   libcairo2-dev \
   libsqlite-dev \
@@ -19,5 +19,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     remotes \
     selectr \
     caTools \
-    BiocManager
+    BiocManager \ 
+    Seurat \ 
 
